@@ -38,9 +38,9 @@ async function checkBug(){
             await lessond[j].save();
         }
     }
-    setTimeout(checkBug,3000);
+    setTimeout(checkBug,600000);
 }
 checkBug();
-app.listen(80,()=>{
-    console.log("server up at port 80");
+app.listen(3000,()=>{
+    console.log("server up at port 3000");
 })
